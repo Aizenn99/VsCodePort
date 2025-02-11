@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { Code, Mail, User, FolderGit2, Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { Code, Mail, User, FolderGit2, Menu, X } from "lucide-react";
 
 const Layout = ({ children }) => {
   const navigate = useNavigate();
@@ -9,24 +9,24 @@ const Layout = ({ children }) => {
 
   const getFileIcon = (path) => {
     switch (path) {
-      case '/':
-        return '📄';
-      case '/about':
-        return '📘';
-      case '/projects':
-        return '📂';
-      case '/contact':
-        return '📧';
+      case "/":
+        return "📄";
+      case "/about":
+        return "📘";
+      case "/projects":
+        return "📂";
+      case "/contact":
+        return "📧";
       default:
-        return '📄';
+        return "📄";
     }
   };
 
   const navigationItems = [
-    { path: '/', label: 'home.tsx', icon: User },
-    { path: '/about', label: 'about.tsx', icon: FolderGit2 },
-    { path: '/projects', label: 'projects.tsx', icon: FolderGit2 },
-    { path: '/contact', label: 'contact.tsx', icon: Mail },
+    { path: "/", label: "home.jsx", icon: User },
+    { path: "/about", label: "about.jsx", icon: FolderGit2 },
+    { path: "/projects", label: "projects.jsx", icon: Code },
+    { path: "/contact", label: "contact.jsx", icon: Mail },
   ];
 
   const handleNavigation = (path) => {
@@ -39,7 +39,9 @@ const Layout = ({ children }) => {
       <header className="bg-[#323233] p-2 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-2">
           <Code className="w-5 h-5 text-blue-400" />
-          <span className="hidden sm:inline">Portfolio - Visual Studio Code</span>
+          <span className="hidden sm:inline">
+            Portfolio - Visual Studio Code
+          </span>
           <span className="sm:hidden">Portfolio</span>
         </div>
         <div className="flex items-center space-x-4">
@@ -69,7 +71,7 @@ const Layout = ({ children }) => {
                 key={path}
                 onClick={() => handleNavigation(path)}
                 className={`flex items-center space-x-4 p-3 rounded-md cursor-pointer ${
-                  location.pathname === path ? 'bg-[#37373d]' : ''
+                  location.pathname === path ? "bg-[#37373d]" : ""
                 }`}
               >
                 <Icon className="w-6 h-6" />
@@ -87,7 +89,7 @@ const Layout = ({ children }) => {
               key={path}
               onClick={() => navigate(path)}
               className={`cursor-pointer p-2 rounded-md ${
-                location.pathname === path ? 'bg-[#37373d]' : ''
+                location.pathname === path ? "bg-[#37373d]" : ""
               }`}
             >
               <Icon className="w-6 h-6" />
@@ -103,7 +105,7 @@ const Layout = ({ children }) => {
                 key={path}
                 onClick={() => navigate(path)}
                 className={`flex items-center space-x-2 text-sm cursor-pointer ${
-                  location.pathname === path ? 'text-white' : 'text-[#8c8c8c]'
+                  location.pathname === path ? "text-white" : "text-[#8c8c8c]"
                 }`}
               >
                 <span className="text-blue-400">{getFileIcon(path)}</span>

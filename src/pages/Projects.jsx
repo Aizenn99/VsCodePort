@@ -2,10 +2,11 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'RentEase',
+    title: 'Ease Tax',
     description: 'RentEase is a comprehensive Rental Management System designed to streamline the management of rental properties for landlords and tenants.',
     image: 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=600&h=400',
     technologies: ['Java', 'JavaScript', 'TypeScript', 'Spring Boot', 'React', 'PostgreSQL', 'Docker'],
+    
   },
   {
     title: 'VEGFRU-An-Online-Vegetables-Fruits-Marketplace',

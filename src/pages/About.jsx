@@ -14,7 +14,7 @@ const About = () => {
             />
             <p className="text-[#ce9178] leading-relaxed">
               I am a dynamic full-stack developer with a diverse skill set that spans across
-              the realms of MERN Stack, Java, and JavaScript. My journey in the world of
+              the realms of MERN Stack, Python, and JavaScript. My journey in the world of
               software development is a relentless quest for knowledge and innovation. I'm on
               a mission to utilize technology for the betterment of society, crafting
               ingenious applications and software to tackle real-world challenges.
@@ -26,8 +26,8 @@ const About = () => {
             <div className="pl-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
               {[
                 'JavaScript', 'TypeScript', 'React', 'Node.js', 'Express',
-                'MongoDB', 'PostgreSQL', 'Java', 'Spring Boot', 'Docker',
-                'AWS', 'Git', 'REST APIs', 'GraphQL', 'Tailwind CSS'
+                'MongoDB', 'PostgreSQL', 'Python', 'cloudinary', 'Docker',
+                'Github', 'Git', 'REST APIs', 'GraphQL', 'Tailwind CSS'
               ].map((skill) => (
                 <div key={skill} className="text-[#ce9178]">"{skill}",</div>
               ))}
@@ -39,13 +39,13 @@ const About = () => {
             <h2 className="text-[#9cdcfe] mb-2">experience: [</h2>
             <div className="pl-4 space-y-4">
               <div className="text-[#ce9178]">
-                "Full Stack Developer @ Tech Corp - 2022-Present",
+                "Full Stack Developer @ Intro Intern - Present",
               </div>
               <div className="text-[#ce9178]">
-                "Backend Developer @ StartUp Inc - 2020-2022",
+                "Founder & Treasurer @ Codewaves organization - 2024-present",
               </div>
               <div className="text-[#ce9178]">
-                "Software Engineer Intern @ Innovation Labs - 2019",
+                "Software Engineer Intern @ Innovation Labs - 2024",
               </div>
             </div>
             <div className="text-[#9cdcfe]">],</div>

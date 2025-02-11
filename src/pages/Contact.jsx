@@ -35,7 +35,7 @@ const Contact = () => {
         'service_bridbzr', // Replace with your EmailJS service ID
         'template_xrmhdx6', // Replace with your EmailJS template ID
         templateParams,
-        'public_key_xxxxxxx' // Replace with your EmailJS public key
+        'xpEjehxPns0DvKaj4' // Replace with your EmailJS public key
       );
 
       toast.success('Message sent successfully!');
