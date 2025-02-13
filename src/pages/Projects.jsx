@@ -3,25 +3,25 @@ import React from 'react';
 const projects = [
   {
     title: 'Ease Tax',
-    description: 'RentEase is a comprehensive Rental Management System designed to streamline the management of rental properties for landlords and tenants.',
-    image: 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=600&h=400',
-    technologies: ['Java', 'JavaScript', 'TypeScript', 'Spring Boot', 'React', 'PostgreSQL', 'Docker'],
+    description: 'Ease Tax : is a comprehensive Rental Management System designed to streamline the management of selling of car and add your own car for selling .',
+    image: "src/assets/CarSelling.png",
+    technologies: ['React', 'JavaScript', 'Tailwind CSS'],
     
   },
   {
-    title: 'VEGFRU-An-Online-Vegetables-Fruits-Marketplace',
+    title: 'Apple I Phone 15 clone',
     description: 'The Online Vegetable and Fruit Marketplace(VegFru) is a web-based platform that provides an easy and convenient way for customers to order fresh fruits.',
-    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&h=400',
+    image: 'src/assets/Apple.png',
     technologies: ['Node.js', 'React', 'Express', 'MongoDB', 'Redux', 'Tailwind CSS'],
   },
   {
-    title: 'JamPod',
+    title: 'Health-Path Finder',
     description: 'Jampod: Where Music Jams and Podcasts Collide! Experience the fusion of live jams and insightful podcasts in one dynamic platform.',
-    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400',
-    technologies: ['React', 'TypeScript', 'Node.js', 'WebRTC', 'MongoDB', 'Socket.io'],
+    image: 'src/assets/Health-Path.png',
+    technologies: ['React', 'JavaScript', 'Node.js', 'WebRTC', 'MongoDB', 'Socket.io'],
   },
   {
-    title: 'ChitChat Application',
+    title: 'E-commerce',
     description: 'ChitChat is a Complete one to one and group Real-Time chatting application. Uses Socket.io for real time communication.',
     image: 'https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=600&h=400',
     technologies: ['Node.js', 'React', 'Express', 'MongoDB', 'Socket.io', 'Redux'],
