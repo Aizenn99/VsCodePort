@@ -35,14 +35,14 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1e1e1e] text-[#d4d4d4] font-mono">
+    <div className="min-h-screen  bg-[#1e1e1e] text-[#d4d4d4] font-mono">
       <header className="bg-[#323233] p-2 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-2">
           <Code className="w-5 h-5 text-blue-400" />
           <span className="hidden sm:inline">
             Portfolio - Visual Studio Code
           </span>
-          <span className="sm:hidden">Portfolio</span>
+          <span className="sm:hidden ">Portfolio</span>
         </div>
         <div className="flex items-center space-x-4">
           <button
@@ -82,8 +82,10 @@ const Layout = ({ children }) => {
         </div>
       )}
 
-      <div className="flex">
-        <div className="hidden lg:flex w-16 bg-[#252526] flex-col items-center py-4 space-y-6">
+      {/* destop view */}
+
+      <div className="flex sticky  top-0 h-screen  ">
+        <div className="hidden  lg:flex w-16 bg-[#252526] flex-col items-center py-4 space-y-6">
           {navigationItems.map(({ path, icon: Icon }) => (
             <div
               key={path}
@@ -97,7 +99,7 @@ const Layout = ({ children }) => {
           ))}
         </div>
 
-        <div className="hidden lg:block w-64 bg-[#252526] border-r border-[#3c3c3c] p-4">
+        <div className="hidden lg:block w-64 bg-[#252526] border-r  border-[#3c3c3c] p-4">
           <h2 className="text-sm uppercase mb-4">Explorer</h2>
           <div className="space-y-2">
             {navigationItems.map(({ path, label }) => (
